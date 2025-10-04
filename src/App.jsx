@@ -1,5 +1,6 @@
 import './App.css'
 import DaisyNav from './Components/DaisyNav/DaisyNav'
+import NavBar from './Components/DaisyNav/NavBar/NavBar'
 
 function App() {
 
@@ -8,7 +9,8 @@ function App() {
     <>
 
       <header>
-        <DaisyNav></DaisyNav>
+        <NavBar></NavBar>
+        {/* <DaisyNav></DaisyNav> */}
       </header>
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row">
