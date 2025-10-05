@@ -14,7 +14,7 @@ const NavBar = () => {
     const [open, setOpen] = useState(false)
 
     const links = navLinks.map(route =>
-        <li className='mr-5 px-2'>
+        <li key={route.id} className='mr-5 px-2'>
             <a href={route.path}>{route.name}</a>
         </li>)
 
