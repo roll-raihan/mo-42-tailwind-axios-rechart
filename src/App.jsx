@@ -3,6 +3,7 @@ import './App.css'
 import DaisyNav from './Components/DaisyNav/DaisyNav'
 import NavBar from './Components/DaisyNav/NavBar/NavBar'
 import PricingOptions from './Components/PricingOptions/PricingOptions'
+import ResultChart from './Components/ReCharts/ResultChart'
 
 
 const pricingPromise = fetch('pricingData.json').then(res => res.json());
@@ -21,6 +22,8 @@ function App() {
         <Suspense fallback={<span className="loading loading-dots loading-lg"></span>}>
           <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
         </Suspense>
+
+        <ResultChart></ResultChart>
       </main>
       {/* <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row">
